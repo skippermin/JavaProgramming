@@ -1,3 +1,5 @@
+package week1;
+
 import java.util.Scanner;
 
 public class Main {
@@ -39,9 +41,21 @@ public class Main {
         int param2 = 4;
         main.calculate2(param1, param2);
 
-        Scanner scanner = new Scanner(System.in);
-        int i = scanner.nextInt();
-        System.out.println("출력: " +i);
         // 스캐너를 통해서 숫자를 입력받고 계산기를 만들어 오세요!.
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("---------------------------");
+
+        System.out.println("숫자를 입력하세요: ");
+        int i = scanner.nextInt();
+        System.out.println("숫자를 입력하세요: ");
+        int j = scanner.nextInt();
+
+        System.out.println("더하기 결과 : " + (i+j));
+        System.out.println("빼기 결과 : " + (i-j));
+        System.out.println("나누기 결과 : " + (i/j));
+        System.out.println("나머지 결과 : "+ (i%j));
+        System.out.println("곱하기 결과 : "+ (i*j));
+
+
     }
 }
